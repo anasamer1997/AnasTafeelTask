@@ -30,6 +30,8 @@ class UserListLoaded extends UserListState {
   List<Object> get props => [users];
 }
 
+class UserDetailLoading extends UserListState {}
+
 class UserDetailLoaded extends UserListState {
   final UserModel user;
 

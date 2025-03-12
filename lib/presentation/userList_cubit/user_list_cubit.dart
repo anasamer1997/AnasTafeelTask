@@ -39,6 +39,7 @@ class UserListCubit extends Cubit<UserListState> {
   }
 
   void fetchSingleUser(int id) async {
+    emit(UserDetailLoading());
     try {
       final response = await apiService.getUserDetails(id);
       final user = response.data;

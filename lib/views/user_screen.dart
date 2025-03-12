@@ -45,10 +45,10 @@ class _UserDetailScreenState extends State<UserDetailScreen> {
             );
           } else if (state is UserListError) {
             return Center(child: Text(state.message));
-          } else if (state is UserListLoading) {
+          } else if (state is UserDetailLoading) {
             return const Center(child: CircularProgressIndicator());
           } else {
-            return const Center(child: CircularProgressIndicator());
+            return Container();
           }
         },
       ),
