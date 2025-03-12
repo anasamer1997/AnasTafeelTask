@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../presentation/userList_cubit/user_list_cubit.dart';
+import '../userList_cubit/user_list_cubit.dart';
 
 class UserDetailScreen extends StatefulWidget {
   final int userId;

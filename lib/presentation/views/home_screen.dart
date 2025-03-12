@@ -1,7 +1,7 @@
 import 'package:anas_tafeel_task/data/api/api_services.dart';
 import 'package:anas_tafeel_task/presentation/userList_cubit/user_list_cubit.dart';
 
-import 'package:anas_tafeel_task/views/user_screen.dart';
+import 'package:anas_tafeel_task/presentation/views/user_screen.dart';
 import 'package:dio/dio.dart';
 
 import 'package:flutter/material.dart';
