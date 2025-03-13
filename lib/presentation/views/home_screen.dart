@@ -2,6 +2,7 @@ import 'package:anas_tafeel_task/data/api/api_services.dart';
 import 'package:anas_tafeel_task/presentation/userList_cubit/user_list_cubit.dart';
 
 import 'package:anas_tafeel_task/presentation/views/user_screen.dart';
+import 'package:anas_tafeel_task/strings.dart';
 import 'package:dio/dio.dart';
 
 import 'package:flutter/material.dart';
@@ -61,12 +62,8 @@ class _UserListScreenState extends State<UserListScreen> {
                       backgroundImage: NetworkImage(user.avatar),
                     ),
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (ctx) => BlocProvider(
-                                create: (context) => UserListCubit(
-                                    apiService: ApiService(Dio())),
-                                child: UserDetailScreen(userId: user.id),
-                              )));
+                      Navigator.pushNamed(context, userDetailsScreen,
+                          arguments: user.id);
                     },
                   );
                 },
